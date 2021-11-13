@@ -1,0 +1,71 @@
+body {
+    background: #0D0D0D;
+}
+main {
+    color: #F2F2F2;
+    font-family: Fantasy;
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 20px;
+
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transition-delay: .3s;
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    background: #F2F2F2;
+    color: #A60522;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.back {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    background: #A60522;
+    color: #F2F2F2;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
